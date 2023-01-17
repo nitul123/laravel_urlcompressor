@@ -52,7 +52,7 @@
                                 <th scope="col">No. of Clicks</th>
                                 <th scope="col">New URL</th>
                                 <th scope="col">Created By</th>
-                                <th scope="col">Action</th>
+                               
                             </tr>
                         </thead>
                         <tbody>
@@ -62,9 +62,9 @@
                                 <td>{{$url->url}}</td>
                                 <td>{{$url->maximum_limit}}</td>
                                 <td>{{$url->clicked}}</td>
-                                <td>{{$url->short_url}}</td>
+                                <td>{{ url('') }}/{{$url->short_url}}</td>
                                 <td>{{isset($url->user->name) ? $url->user->name : '' }}</td>
-                                <td></td>
+                               
                                 
                             </tr>
                             @endforeach
